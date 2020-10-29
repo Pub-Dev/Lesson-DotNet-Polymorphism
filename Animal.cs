@@ -1,17 +1,19 @@
 ﻿using System;
 
+// ReSharper disable All
+
 namespace Lesson_DotNet_Polymorphism
 {
     public class Animal
     {
-        public virtual void Speak()
+        public virtual void Habitat()
         {
-            Console.WriteLine("Fala padrão");
+            Console.WriteLine("Terra 🌍");
         }
 
         public virtual void Type()
         {
-            Console.WriteLine("Tipo padrão");
+            Console.WriteLine("Ser Vivo 🧬");
         }
     }
 }

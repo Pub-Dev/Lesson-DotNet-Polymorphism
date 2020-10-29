@@ -4,16 +4,16 @@
 
 namespace Lesson_DotNet_Polymorphism
 {
-    public class Cat : Animal
+    public class Shark : Animal
     {
         public override void Habitat()
         {
-            Console.WriteLine("Doméstico");
+            Console.WriteLine("Oceanos");
         }
 
         public override void Type()
         {
-            Console.WriteLine("Mamífero");
+            Console.WriteLine("Peixe");
         }
     }
 }

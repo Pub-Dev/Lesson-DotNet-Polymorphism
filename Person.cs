@@ -1,5 +1,7 @@
 ﻿using System;
 
+// ReSharper disable All
+
 namespace Lesson_DotNet_Polymorphism
 {
     public class Person

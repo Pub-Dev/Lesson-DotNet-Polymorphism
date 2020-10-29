@@ -1,24 +1,29 @@
 ﻿using System;
 
+// ReSharper disable All
+
 namespace Lesson_DotNet_Polymorphism
 {
-    internal class Program
+    public static class Program
     {
         private static void Main(string[] args)
         {
-            //Por Herança (Sobre escrita / Override)
-            var dog = new Dog();
-            dog.Speak();
-            dog.Type();
+            Console.Title = "PubDev - Polimorfismo";
 
+            ////Por Herança (Sobrescrita / Override)
+            Animal shark = new Shark();
+            shark.Habitat();
+            shark.Type();
+
+            ////Por Herança (Sobrescrita / Override)
             var cat = new Cat();
-            cat.Speak();
+            cat.Habitat();
             cat.Type();
 
             //Sobrecarga / Overload
-            var pessoa = new Person();
-            pessoa.Start("Humberto");
-            pessoa.Start("Humberto", 26);
+            var person = new Person();
+            person.Start("Humberto");
+            person.Start("Humberto", 26);
 
             Console.ReadLine();
         }
