@@ -6,9 +6,21 @@ namespace Lesson_DotNet_Polymorphism
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Por Herança (Sobre escrita / Override)
+            var dog = new Dog();
+            dog.Speak();
+            dog.Type();
+
+            var cat = new Cat();
+            cat.Speak();
+            cat.Type();
+
+            //Sobrecarga / Overload
+            var pessoa = new Person();
+            pessoa.Start("Humberto");
+            pessoa.Start("Humberto", 26);
+
+            Console.ReadLine();
         }
     }
-
-    public class
 }
