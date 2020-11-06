@@ -20,6 +20,14 @@ namespace Lesson_DotNet_Polymorphism
             cat.Habitat();
             cat.Type();
 
+            ////Por Herança (Sobrescrita / Override)
+            var intern = new Intern();
+            intern.CalculatePayment(750);
+
+            ////Por Herança (Sobrescrita / Override)
+            Employee analyst = new Analyst();
+            analyst.CalculatePayment(1500);
+
             //Sobrecarga / Overload
             var person = new Person();
             person.Start("Humberto");
